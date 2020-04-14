@@ -70,6 +70,7 @@ h1{
     background-color: grey;
     font-size: 12px;
     line-height: 18px;
+
 }
 
 footer{
@@ -123,7 +124,6 @@ img{
 
     .about-me{
         color: black;
-        background-color: white;
         flex-direction: row;
     }
 
