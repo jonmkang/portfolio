@@ -7,7 +7,8 @@ body{
     padding: 0;
 }
 
-.nav-bar{
+nav{
+    font-family: 'Proza Libre', sans-serif;
     width: 100%;
     padding: 1rem;
     position: top;
@@ -25,11 +26,23 @@ body{
     top: 0;
     visibility: visible;
     float: right;
-    margin-top: -5px;
-    padding: 5px;
+    margin-top: -10px;
+    padding: .5rem;
+    font-size: 14px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.menu-text{
+.menu:hover{
+    color: black;
+    background-color: #cd75ff;
+}
+
+header{
     position: top;
     visibility: hidden;
     float: right;
@@ -38,33 +51,47 @@ body{
 }
 
 main{
-    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-image: linear-gradient(to bottom, purple, white);
     
 }
 
 .back, .next{
     min-height: 600px;
     max-width: 60px;
-    background-color: black;
     color: white;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.back:hover, .next:hover{
+    font-weight: bold;
+    border: black 2pt solid;
 }
 
 .display-box{
     text-align: center;
     min-height: 560px;
-    background-color:grey;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: black 1pt solid;
     color: white;
     flex-grow:2;
 }
 
 footer{
+    font-family: 'Proza Libre', sans-serif;
     padding: 1rem;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     width: 100%;
     position: bottom;
 }
@@ -72,7 +99,7 @@ footer{
 
 
 @media screen and (min-width: 720px){
-    .nav-bar{
+    nav{
         font-size: 16pt;
     }
 
@@ -80,10 +107,8 @@ footer{
         visibility: hidden;
     }
 
-    .menu-text{
+    header{
         visibility: visible;
-        color: white;
-        background-color: black;
     }
 
 }

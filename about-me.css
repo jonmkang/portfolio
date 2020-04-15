@@ -7,7 +7,8 @@ body{
     padding: 0;
 }
 
-.nav-bar{
+nav{
+    font-family: 'Proza Libre', sans-serif;
     width: 100%;
     padding: 1rem;
     position: top;
@@ -25,8 +26,20 @@ body{
     top: 0;
     visibility: visible;
     float: right;
-    margin-top: -5px;
-    padding: 5px;
+    margin-top: -10px;
+    padding: .5rem;
+    font-size: 14px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu:hover{
+    color: black;
+    background-color: #cd75ff;
 }
 
 .menu-text{
@@ -37,51 +50,40 @@ body{
     padding: 0;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.project{
-    text-align: center;
-    color: white;
-    background-color: grey;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10%;
-    min-height: 260px;
-}
-
 p{
     margin: 5%;
     text-indent: 2em;
-    color: black;
+    color: white;
 }
 
 h1{
-    text-align: center;
-    margin: 5%;
-}
-
-.about-me{
-    margin: 5%;
-    padding: 2%;
     color: white;
-    background-color: grey;
-    font-size: 12px;
-    line-height: 18px;
+    margin: 0;
+    padding: 3%;
+    text-align: center;
+    background-color: #750075;
 }
 
-p{
-    background-color: white;
+main{
+    background-image: linear-gradient(to bottom, #750075, #cd75ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
 }
+
+
 
 footer{
+    font-family: 'Proza Libre', sans-serif;
     padding: 1rem;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     width: 100%;
     position: bottom;
 }
@@ -102,7 +104,7 @@ img{
         margin-top: 10%;
     }
 
-    .nav-bar{
+    nav{
         font-size: 16pt;
     }
 
@@ -116,19 +118,15 @@ img{
         background-color: black;
     }
 
-    /* .project-container{
-        width: 50%;
-    } */
+    main{
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 @media screen and (min-width: 880px){
     h1{
         font-size: 44px;
-    }
-
-    .about-me{
-        color: black;
-        flex-direction: row;
     }
 
     span{
@@ -140,10 +138,12 @@ img{
         font-size: 14pt;
     }
     
-    .about-me{
+    main{
         flex-direction: row;
         font-size: 16px;
         line-height: 24px;
+        color: white;
+        flex-direction: row;
     }
 
     .project-page{

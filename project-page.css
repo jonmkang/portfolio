@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Proza Libre', sans-serif;
+    width: 100%;
+    position: top;
+    text-align: left;
+    background-color: black;
+    padding: 1.2rem;
+    color: white;
+    font-size: 12px;
+    max-height: 4rem;
+}
+
+.menu{
+    top: 0;
+    visibility: visible;
+    float: right;
+    margin-top: -10px;
+    padding: .5rem;
+    font-size: 14px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu:hover{
+    color: black;
+    background-color: #cd75ff;
+}
+
+.menu-text{
+    position: top;
+    visibility: hidden;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.project{
+    padding: 5px;
+    border: #750075 5pt ridge;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    min-height: 240px;
+}
+
+p{
+    margin: 5%;
+    text-indent: 2em;
+    color: white;
+    font-weight: bold;
+}
+
+main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #cd75ff;
+    font-family: 'Open Sans', sans-serif;;
+    padding: 2%;
+    color: white;
+    font-size: 12px;
+    line-height: 18px;
+    width: 100%;
+}
+
+
+
+footer{
+    font-family: 'Proza Libre', sans-serif; 
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: bottom;
+    position: bottom;
+    max-height: 3rem;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    border: 2pt white solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+@media screen and (min-width: 720px){
+
+    .project{
+        margin-top: 10%;
+    }
+
+    nav{
+        font-size: 16pt;
+    }
+}
+
+@media screen and (min-width: 880px){
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .project-container{
+        width: 40%;
+    }
+
+    span{
+        width: 80%;
+    }
+    
+    .short-bio{
+        width: 140%;
+        font-size: 14pt;
+    }
+
+    .menu{
+        visibility: hidden;
+    }
+
+    .menu-text{
+        visibility: visible;
+        color: white;
+        background-color: black;
+    }
+}
