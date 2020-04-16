@@ -9,26 +9,30 @@ body{
 
 nav{
     font-family: 'Proza Libre', sans-serif;
+    height: 4rem;
     width: 100%;
-    padding: 1rem;
     position: top;
     text-align: left;
-    background-color: black;
-    padding: 1/5rem;
-    color: white;
-    font-size: 12px;
-    max-height: 4rem;
     clear: right;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 1rem;
 }
 
+ul{
+    font-size: 18px;
+    font-weight: bold;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+li{
+    padding: 15px;
+}
 
 .menu{
-    top: 0;
-    visibility: visible;
-    float: right;
-    margin-top: -10px;
-    padding: .5rem;
-    font-size: 14px;
+    font-size: 16px;
     background-color: black;
     border: none;
     color: white;
@@ -42,22 +46,44 @@ nav{
     background-color: #cd75ff;
 }
 
-header{
-    position: top;
-    visibility: hidden;
-    float: right;
-    margin: 0;
-    padding: 0;
-}
-
 main{
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 400px;
-    background-color: #ffa0ff;
     padding: 5%;
+    text-align: center;
+    min-width: 80%;
+    background-color: #ffa0ff;
+}
+
+header{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;;
+    z-index: 1;
+    right: 0;
+}
+  
+header .header-link{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+}
+
+.header-link{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+}
+
+.header-link:hover{
+    color: black;
+    background-color: #cd75ff;
 }
 
 footer{
@@ -75,24 +101,43 @@ p{
     min-height: 200px;
 }
 
+.dropdown {
+    float: right;
+    margin: 0; 
+    padding: 0;
+}
+
+.show{
+    display: block;
+}
+
 @media screen and (min-width: 720px){
     nav{
         font-size: 16pt;
-    }
-
-    .menu{
-        visibility: hidden;
-    }
-
-    header{
-        visibility: visible;
-        color: white;
-        background-color: black;
     }
 }
 
 @media screen and (min-width: 880px){
     h1{
         font-size: 44px;
+    }
+
+    header{
+        display: inline-block;
+        position: top;
+        right: 0;
+        margin-right: 10px;
+        padding: 0;
+        color: white;
+        background-color: black;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header .header-link{
+        display: inline-block;
+        max-height: 3rem;
     }
 }

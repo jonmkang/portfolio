@@ -9,26 +9,21 @@ body{
 
 nav{
     font-family: 'Proza Libre', sans-serif;
+    height: 4rem;
     width: 100%;
-    padding: 1rem;
     position: top;
     text-align: left;
-    background-color: black;
-    padding: 1/5rem;
-    color: white;
-    font-size: 12px;
-    max-height: 4rem;
     clear: right;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 1rem;
 }
 
 
+
 .menu{
-    top: 0;
-    visibility: visible;
-    float: right;
-    margin-top: -10px;
-    padding: .5rem;
-    font-size: 14px;
+    font-size: 16px;
     background-color: black;
     border: none;
     color: white;
@@ -43,25 +38,60 @@ nav{
 }
 
 header{
-    position: top;
-    visibility: hidden;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;;
+    z-index: 1;
+    right: 0;
+}
+
+header .header-link{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+}
+
+.header-link{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+}
+
+.header-link:hover{
+    color: black;
+    background-color: #cd75ff;
+}
+
+.dropdown {
     float: right;
-    margin: 0;
+    margin: 0; 
     padding: 0;
+}
+
+.show{
+    display: block;
 }
 
 main{
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-image: linear-gradient(to bottom, purple, white);
-    
+    min-width: 80%;
+    min-height: 100%;
 }
 
 .back, .next{
-    min-height: 600px;
-    max-width: 60px;
+    align-self: center;
+    min-height: 100px;
+    max-width: 100px;
+    min-width: 20px;
+    font-size: 20px;
+    padding: 5px;
     color: white;
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -77,13 +107,26 @@ main{
 }
 
 .display-box{
+    display: flex;
     text-align: center;
     min-height: 560px;
     background-color: Transparent;
     background-repeat:no-repeat;
-    border: black 1pt solid;
     color: white;
-    flex-grow:2;
+    flex-grow:1;
+    flex-direction: column;
+    width: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+}
+
+a:hover{
+    color: black;
+    background-color: #cd75ff;
 }
 
 footer{
@@ -96,25 +139,90 @@ footer{
     position: bottom;
 }
 
+.project-pics{
+    display: none;
+}
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: white;
+    border: 1pt black solid;
+}
 
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+p{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+img{
+    width:100%;
+    height:100%;
+    max-height: 700px;
+    max-width:700px;
+    min-height: 150px;
+    min-height: 150px;
+}
 
 @media screen and (min-width: 720px){
+    .display-box{
+        max-height: 550px;
+    }
     nav{
         font-size: 16pt;
     }
-
-    .menu{
-        visibility: hidden;
-    }
-
-    header{
-        visibility: visible;
-    }
-
 }
-
+        
 @media screen and (min-width: 880px){
     h1{
         font-size: 44px;
     }
+        
+    header{
+        display: inline-block;
+        position: top;
+        right: 0;
+        margin-right: 10px;
+        padding: 0;
+        color: white;
+        background-color: black;
+    }
+        
+    .menu{
+        display: none;
+    }
+        
+    header .header-link{
+        display: inline-block;
+        max-height: 3rem;
+    }
 }
+        
