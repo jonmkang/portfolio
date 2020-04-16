@@ -116,6 +116,7 @@ main{
     flex-grow:1;
     flex-direction: column;
     width: 80%;
+    justify-content: center;
 }
 
 a{
@@ -193,12 +194,21 @@ img{
     min-height: 150px;
 }
 
+.app-link{
+    display: block;
+    color: black;
+    border: 2pt black solid;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 720px){
-    .display-box{
-        max-height: 550px;
-    }
     nav{
         font-size: 16pt;
+    }
+    footer{
+        margin-top: 3rem;
     }
 }
         
