@@ -139,6 +139,7 @@ footer{
     position: bottom;
 }
 
+
 .project-pics{
     display: none;
 }
@@ -203,7 +204,8 @@ img{
         
 @media screen and (min-width: 880px){
     h1{
-        font-size: 44px;
+        font-size: 40px;
+        margin: 10px;
     }
         
     header{
@@ -223,6 +225,15 @@ img{
     header .header-link{
         display: inline-block;
         max-height: 3rem;
+    }
+    
+    .display-box{
+        max-height: 800px;
+    }
+
+
+    footer{
+        margin-top: 2rem;
     }
 }
         
