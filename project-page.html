@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src='project-page.js'></script>
+    <script src='project-page.js'></script>
 
 </head>
 <body>
     <!-- Navigation bar contains Home button, Menu buttons for each page. -->
-    <nav role="navigation">Jonathan's Porfolio</a>
+    <nav>Jonathan's Porfolio
         <div class="dropdown"> 
             <button onclick="myFunction()" class="menu">Menu</button>
             <header id="myDropdown" class="dropdown-content">
@@ -30,7 +30,7 @@
 
             <h1>Quiz App</h1>
             <!-- Contains all project pictures -->
-            <section class="project">
+            <div class="project">
           
                 <div class="project-pics" style="display:block;">
                     <img src="quiz-app-P1.jpg" alt="Start Quiz Page" style="width:100%;height:100%;">
@@ -47,7 +47,7 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            </section>
+            </div>
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
@@ -57,29 +57,29 @@
             <a class="app-link" href="https://github.com/jonmkang/quiz-app" target="_blank">Link to Quiz App Repo</a>
             <a class="app-link" href="https://jonmkang.github.io/quiz-app/" target="_blank">Link to Quiz App</a>
         </div>
-        <div class="project-container">
+        <!-- <div class="project-container">
             <h1>Project 2</h1>
-            <section class="project">
+            <div class="project">
                 This holds each project for mobile users, title of the project and image of the project site
-            </section>
+            </div>
             <p>This area explains the project site, what it does and how it works.</p> 
         </div>
 
         <div class="project-container">
             <h1>Project 3</h1>
-            <section class="project">
+            <div class="project">
                 This holds each project for mobile users, title of the project and image of the project site
-            </section>
+            </div>
             <p>This area explains the project site, what it does and how it works.</p>
         </div>
 
         <div class="project-container">
             <h1>Project 4</h1>
-            <section class="project">
+            <div class="project">
                 This holds each project for mobile users, title of the project and image of the project site
-            </section>
+            </div>
             <p>This area explains the project site, what it does and how it works.</p>
-        </div>
+        </div> -->
     </main>
     <footer>Works done by Jonathan Kang 2020</footer>
 </body>
