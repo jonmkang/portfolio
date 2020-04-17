@@ -83,7 +83,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #cd75ff;
+    background-color: purple;
     font-family: 'Open Sans', sans-serif;;
     padding: 2%;
     color: white;
