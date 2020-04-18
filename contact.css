@@ -111,9 +111,25 @@ p{
     display: block;
 }
 
+
+
+.contact-info{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: black; 
+    border: white 2pt solid;
+}
+
 @media screen and (min-width: 720px){
     nav{
         font-size: 16pt;
+    }
+
+    .contact-info{
+        font-size: 18px;
     }
 }
 
@@ -140,4 +156,9 @@ p{
         display: inline-block;
         max-height: 3rem;
     }
+
+    .contact-info{
+        font-size: 20px;
+    }
+    
 }
