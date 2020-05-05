@@ -90,6 +90,7 @@ main{
     font-size: 12px;
     line-height: 18px;
     width: 100%;
+    min-height: 100vh;
     text-align: center;
 }
 

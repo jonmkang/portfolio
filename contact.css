@@ -55,6 +55,7 @@ main{
     padding: 5%;
     text-align: center;
     min-width: 80%;
+    min-height: 100vh;
     background-color: #ffa0ff;
 }
 

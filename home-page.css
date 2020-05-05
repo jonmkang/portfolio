@@ -81,7 +81,7 @@ main{
     flex-direction: column;
     background-image: linear-gradient(to bottom, black, purple);
     min-width: 80%;
-    min-height: 450px;
+    min-height: 100vh;
     padding: 30px;
 }
 
