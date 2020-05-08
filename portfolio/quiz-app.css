@@ -224,25 +224,6 @@ footer{
 
     nav{
         font-size: 16pt;
-    };
-
-    header{
-        display: inline-block;
-        position: top;
-        right: 0;
-        margin-right: 10px;
-        padding: 0;
-        color: white;
-        background-color: black;
-    }
-
-    .menu{
-        display: none;
-    }
-
-    header .header-link{
-        display: inline-block;
-        max-height: 3rem;
     }
 
     .app-info{
@@ -261,5 +242,24 @@ footer{
         min-width: 700px;
         max-height: 600px;
         max-width: 700px;
+    }
+
+    header{
+        display: inline-block;
+        position: top;
+        right: 0;
+        margin-right: 10px;
+        padding: 0;
+        color: white;
+        background-color: black;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header .header-link{
+        display: inline-block;
+        max-height: 3rem;
     }
 }
