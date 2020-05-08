@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Jonathan Kang's Project Page</title>
+    <link rel="stylesheet" href="api-project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='api-project.js'></script>
+
+</head>
+<body>
+    <!-- Navigation bar contains Home button, Menu buttons for each page. -->
+    <nav>Jonathan's Porfolio
+        <div class="dropdown"> 
+            <button onclick="myFunction()" class="menu">Menu</button>
+            <header id="myDropdown" class="dropdown-content">
+                <a class="header-link" href="https://jonmkang.github.io/portfolio/home-page.html">Home</a>
+                <a class="header-link" href="https://jonmkang.github.io/portfolio/about-me.html">About me</a>
+                <a class="header-link" href="https://jonmkang.github.io/portfolio/project-page.html">Projects</a>
+                <a class="header-link" href="https://jonmkang.github.io/portfolio/contact.html">Contact Info</a>
+            </header>
+        </div>
+    </nav>
+    <h1>API Project</h1>
+    <main> 
+        <div class="project-container"> 
+            <!-- Contains all project pictures -->
+            <div class="project">
+                <div class="project-pics" style="display:block;">
+                    <img src="api-hack-P1.jpg" alt="API Page" style="width:100%;height:100%;">
+                </div>
+               
+                <div class="project-pics">   
+                    <img src="api-hack-P2.jpg" alt="API Result Page" style="width:100%;height:100%;">
+                </div>   
+
+                <div class="project-pics">   
+                    <img src="api-hack-P3.jpg" alt="API Favorites Page" style="width:100%;height:100%;">
+                </div>      
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <div style="text-align:center">
+                <button class="dot active" aria-label="api hack picture 1" onclick="currentSlide(1)"></button>
+                <button class="dot" aria-label="api hack picture 2" onclick="currentSlide(2)"></button>
+                <button class="dot" aria-label="api hack picture 3" onclick="currentSlide(3)"></button>
+            </div>
+            <p style="text-align: center;">Created May 2020</p>
+        </div>
+        <div class="info">
+            <p>This website uses two public API's for entertainment recommendations. It takes the user's choice of music, tv show, or movie and gives recommendations upon search.  I built this during the COVID-19 Pandemic to widen my tastes in entertainment as well as others who wish to use it.</p>
+            <ul>Skills applied:
+                <li>jQuery functions</li>
+                <li>Fetch requests</li>
+                <li>Ajax requests</li>
+            </ul>
+            <a class="app-link" href="https://github.com/jonmkang/api-hack-project" target="_blank">Link to API Project Repo</a>
+            <a class="app-link" href="https://jonmkang.github.io/api-hack-project/" target="_blank">Link to API Project</a>
+        </div>
+    </main>
+    <a class="next-link" href="/portfolio/quiz-app.html">&lt;-- Quiz App</a>
+    <footer>Works done by Jonathan Kang 2020</footer>
+</body>
+</html>

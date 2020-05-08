@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Jonathan Kang's Project Page</title>
+    <link rel="stylesheet" href="quiz-app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='quiz-app.js'></script>
+
+</head>
+<body>
+    <!-- Navigation bar contains Home button, Menu buttons for each page. -->
+    <nav>Jonathan's Porfolio
+        <div class="dropdown"> 
+            <button onclick="myFunction()" class="menu">Menu</button>
+            <header id="myDropdown" class="dropdown-content">
+                <a class="header-link" href="https://jonmkang.github.io/portfolio/home-page.html">Home</a>
+                <a class="header-link" href="https://jonmkang.github.io/portfolio/about-me.html">About me</a>
+                <a class="header-link" href="phttps://jonmkang.github.io/portfolio/project-page.html">Projects</a>
+                <a class="header-link" href="https://jonmkang.github.io/portfolio/contact.html">Contact Info</a>
+            </header>
+        </div>
+    </nav>
+    <h1>Quiz App</h1>
+    <main> 
+        <!-- Each project container contains one project, images and information -->
+        <div class="project-container">
+            <!-- Contains all project pictures -->
+            <div class="project">
+                <div class="project-pics" style="display:block;">
+                    <img src="quiz-app-P1.jpg" alt="Start Quiz Page";">
+                </div>
+               
+                <div class="project-pics">   
+                    <img src="quiz-app-P2.jpg" alt="Start Quiz Page"">
+                </div>   
+
+                <div class="project-pics">   
+                    <img src="quiz-app-P3.jpg" alt="Start Quiz Page"">
+                </div>      
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <div style="text-align:center">
+                <button class="dot active" aria-label="quiz app picture 1" onclick="currentSlide(1)"></button>
+                <button class="dot" aria-label="quiz app picture 2" onclick="currentSlide(2)"></button>
+                <button class="dot" aria-label="quiz app picture 3" onclick="currentSlide(3)"></button>
+            </div>
+        </div> 
+        <div class="info">
+            <p class="app-info">This website is a short quiz about myself. The quiz is used to give some personal information about myself for future employers. I built this quiz as my own introduction to coding using HTML, CSS, and javascript.</p>
+            <ul>Skills applied:
+                <li>jQuery functions</li>
+                <li>Responsive Display</li>
+            </ul>
+            <a class="app-link" href="https://github.com/jonmkang/quiz-app" target="_blank">Link to Quiz App Repo</a>
+            <a class="app-link" href="https://jonmkang.github.io/quiz-app/" target="_blank">Link to Quiz App</a>
+        </div>
+    </main>
+    <a class="next-link" href="/portfolio/api-project.html">API Project --></a>
+    <footer>Works done by Jonathan Kang 2020</footer>
+</body>
+</html>

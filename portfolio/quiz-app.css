@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 224, 255);
+}
+
+nav{
+    font-family: 'Proza Libre', sans-serif;
+    height: 4rem;
+    width: 100%;
+    position: top;
+    text-align: left;
+    clear: right;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+
+.menu{
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu:hover{
+    color: black;
+    background-color: #cd75ff;
+}
+
+header{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;;
+    z-index: 1;
+    right: 0;
+}
+
+header .header-link{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+}
+
+.header-link{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+}
+
+.project{
+    border: #750075 5pt ridge;
+    background-color:black;
+    position: relative;
+    margin: 10px;
+}
+
+img{
+    object-fit: scale-down;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+p{
+    text-align: left;
+    text-indent: 2rem;
+    line-height: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+ul{
+    margin: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 224, 255);
+    font-family: 'Open Sans', sans-serif;;
+    padding: 2%;
+    color: black;
+    min-height: 100vh;
+}
+
+.project-container{
+    margin-bottom: 2rem;
+}
+
+.next-link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.next-link:hover{
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 255, 0, 0.1);
+}
+
+.dropdown {
+    float: right;
+    margin: 0; 
+    padding: 0;
+}
+
+.show{
+    display: block;
+}
+
+footer{
+    font-family: 'Proza Libre', sans-serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.project-pics{
+    display: none;
+}
+
+.info{
+    text-align: center;
+}
+
+.app-link{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 2pt solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev{
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: white;
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: black;
+}
+
+
+
+@media screen and (min-width: 720px){
+    main{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .info{
+        padding: 20px;
+        flex-grow: 1;
+        flex-basis: 60%; 
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .project{
+        margin: 20px auto;
+    }
+
+    nav{
+        font-size: 16pt;
+    };
+
+    header{
+        display: inline-block;
+        position: top;
+        right: 0;
+        margin-right: 10px;
+        padding: 0;
+        color: white;
+        background-color: black;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header .header-link{
+        display: inline-block;
+        max-height: 3rem;
+    }
+
+    .app-info{
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 880px){
+    .info{
+        flex-basis: 40%;
+    }
+
+    img{
+        object-fit: fill;
+        min-height: 600px;
+        min-width: 700px;
+        max-height: 600px;
+        max-width: 700px;
+    }
+}
