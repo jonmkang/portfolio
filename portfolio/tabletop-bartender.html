@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Jonathan Kang's Project Page</title>
-    <link rel="stylesheet" href="api-project.css">
+    <link rel="stylesheet" href="quiz-app.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src='api-project.js'></script>
+    <script src='quiz-app.js'></script>
 
 </head>
 <body>
@@ -19,26 +19,27 @@
             <header id="myDropdown" class="dropdown-content">
                 <a class="header-link" href="https://jonmkang.github.io/portfolio/home-page.html">Home</a>
                 <a class="header-link" href="https://jonmkang.github.io/portfolio/about-me.html">About me</a>
-                <a class="header-link" href="https://jonmkang.github.io/portfolio/project-page.html">Projects</a>
+                <a class="header-link" href="phttps://jonmkang.github.io/portfolio/project-page.html">Projects</a>
                 <a class="header-link" href="https://jonmkang.github.io/portfolio/contact.html">Contact Info</a>
             </header>
         </div>
     </nav>
-    <h1>API Project</h1>
+    <h1>Tabletop Bartender</h1>
     <main> 
-        <div class="project-container"> 
+        <!-- Each project container contains one project, images and information -->
+        <div class="project-container">
             <!-- Contains all project pictures -->
             <div class="project">
                 <div class="project-pics" style="display:block;">
-                    <img src="api-hack-P1.jpg" alt="API Page" style="width:100%;height:100%;">
+                    <img src="quiz-app-P1.jpg" alt="Start Quiz Page";">
                 </div>
                
                 <div class="project-pics">   
-                    <img src="api-hack-P2.jpg" alt="API Result Page" style="width:100%;height:100%;">
+                    <img src="quiz-app-P2.jpg" alt="Start Quiz Page"">
                 </div>   
 
                 <div class="project-pics">   
-                    <img src="api-hack-P3.jpg" alt="API Favorites Page" style="width:100%;height:100%;">
+                    <img src="quiz-app-P3.jpg" alt="Start Quiz Page"">
                 </div>      
                 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -46,24 +47,26 @@
 
             </div>
             <div style="text-align:center">
-                <button class="dot active" aria-label="api hack picture 1" onclick="currentSlide(1)"></button>
-                <button class="dot" aria-label="api hack picture 2" onclick="currentSlide(2)"></button>
-                <button class="dot" aria-label="api hack picture 3" onclick="currentSlide(3)"></button>
+                <button class="dot active" aria-label="tabletop bartender app picture 1" onclick="currentSlide(1)"></button>
+                <button class="dot" aria-label="tabletop bartender picture 2" onclick="currentSlide(2)"></button>
+                <button class="dot" aria-label="tabletop bartender picture 3" onclick="currentSlide(3)"></button>
             </div>
-            <p style="text-align: center;">Created May 2020</p>
-        </div>
+        </div> 
         <div class="info">
-            <p>This website uses two public API's for entertainment recommendations. It takes the user's choice of music, tv show, or movie and gives recommendations upon search.  I built this during the COVID-19 Pandemic to widen my tastes in entertainment as well as others who wish to use it.</p>
+            <p class="app-info">This website is a cocktail creation database.  This is the front-end aspect to my full-stack project.  With a simple email and password to register, you can use my database to create a cocktail of your design with the ingredients I have stored in the database.</p>
             <ul>Skills applied:
-                <li>jQuery functions</li>
-                <li>Fetch requests</li>
-                <li>Ajax requests</li>
+                <li>React.js</li>
+                <li>JWT user authentication</li>
+                <li>React Router</li>
+                <li>React Select</li>
+                <li>Fetch Requests</li>
+                <li>Responsive Display</li>
             </ul>
-            <a class="app-link" href="https://github.com/jonmkang/api-hack-project" target="_blank">Link to API Project Repo</a>
-            <a class="app-link" href="https://jonmkang.github.io/api-hack-project/" target="_blank">Link to API Project</a>
+            <a class="app-link" href="https://github.com/jonmkang/tabletop-bartender-client" target="_blank">Link to Tabletop Bartender Repo</a>
+            <a class="app-link" href="https://tabletop-bartender-client.vercel.app/" target="_blank">Link to Tabletop Bartender</a>
         </div>
     </main>
-    <a class="next-link" href="/portfolio/portfolio/tabletop-bartender.html">&lt;-- Quiz App</a>
+    <a class="next-link" href="/portfolio/api-project.html">API Project --></a>
     <footer>Works done by Jonathan Kang 2020</footer>
 </body>
 </html>
